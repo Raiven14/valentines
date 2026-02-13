@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💗</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    overflow: hidden;
+}
+
+/* Animated Background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glass Card */
+.card {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    padding: 50px;
+    width: 90%;
+    max-width: 650px;
+    color: #333;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease forwards;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #c9184a;
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.signature {
+    margin-top: 25px;
+    text-align: right;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Floating Hearts */
+.heart {
+    position: absolute;
+    bottom: -20px;
+    color: rgba(255, 255, 255, 0.6);
+    animation: float 8s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) scale(1.5);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<div class="heart" style="left:10%; animation-duration: 7s;">💗</div>
+<div class="heart" style="left:30%; animation-duration: 9s;">💕</div>
+<div class="heart" style="left:50%; animation-duration: 8s;">💖</div>
+<div class="heart" style="left:70%; animation-duration: 10s;">💘</div>
+<div class="heart" style="left:85%; animation-duration: 6s;">💓</div>
+
+<div class="card">
+    <h1>Happy Valentine’s Day 💗</h1>
+
+    <p><strong>Good morning po, Happy Valentine’s Day!!</strong></p>
+
+    <p>
+        Well, I don’t even know if I’m allowed to say this, but I still will HAHAHAHA.
+        Ganito kasi—ever since that day, nothing has changed about how I feel for you.
+        You’re still that special person to me, and hindi nagbago ’yun.
+    </p>
+
+    <p>
+        Sometimes I wonder, what if I wasn’t immature back then?
+        What if I knew how to treat you right at that time?
+        Ever since that day, I’ve always thought that everything happened
+        because I was too immature, and I know that’s the main reason for it all.
+    </p>
+
+    <p>
+        I really want to make up for my mistakes, and I know it’s my fault why you ended up hating me.
+        If I had just been a little more open-minded back then,
+        maybe things would’ve turned out differently.
+    </p>
+
+    <p>
+        Yeah, I know it’s not easy to forgive someone who once broke your trust.
+        But I’m still hoping that somehow, there’s still a chance for me
+        to make up for my mistakes in the past.
+        It’s just that I still like you the same way I liked you before—nothing has changed.
+    </p>
+
+    <div class="signature">
+        — From someone who still cares
+    </div>
+</div>
+
+</body>
+</html>
